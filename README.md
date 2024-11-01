@@ -24,6 +24,7 @@ This is `Planetarium`.
 - 🔭 I’m currently working on something cool.
 - 🌱 I’m currently learning Everything I like.
 - 🎒 I’m studying in university now.
+- ❤️  Here is my blog [planetarium1001][blog]
 
 ## Visitor Count
 
@@ -37,7 +38,6 @@ This is `Planetarium`.
 ## Devices
 
 [![Arch Linux][arch_img]][arch]
-[![Huawei Mate60Pro][huawei_img]][huawei]
 
 ## Status
 
@@ -45,6 +45,8 @@ This is `Planetarium`.
 ![Top Langs][lang]
 
 ![Activity Graph][activity]
+
+[blog]: https://planetarium1001.github.io/
 
 [visitor]: https://count.getloli.com/get/@:planetarium1001
 
