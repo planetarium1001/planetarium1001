@@ -46,7 +46,7 @@ This is `Planetarium`.
 
 ![Activity Graph][activity]
 
-[visitor]: https://count.getloli.com/get/@:plana-planetarium
+[visitor]: https://count.getloli.com/get/@:planetarium1001
 
 [python_img]: https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=ffffff
 [python]: https://www.python.org/
