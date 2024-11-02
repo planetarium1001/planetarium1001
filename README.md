@@ -56,8 +56,6 @@ This is `Planetarium`.
 [git]: https://git-scm.com/
 [arch_img]: https://img.shields.io/badge/Arch-Linux-33aadd?style=flat-square&logo=arch-linux&logoColor=ffffff
 [arch]: https://www.archlinux.org/
-[huawei_img]: https://img.shields.io/badge/Huawei-Mate60Pro-f5010c?style=flat-square&logo=huawei&logoColor=ffffff
-[huawei]: https://www.huawei.com/
 
 [stats_graph]: https://github-readme-stats.vercel.app/api?username=planetarium1001&show_icons=true&theme=tokyonight
 [lang]: https://github-readme-stats.vercel.app/api/top-langs/?username=planetarium1001&layout=compact&theme=tokyonight
