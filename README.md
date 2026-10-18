@@ -1,4 +1,4 @@
-<h1 align="center">planetarium1001</h1>
+<h1 align="center">Planetarium</h1>
 
 <p align="center">
   <em>Frontend, backend, and the space between.</em><br>
@@ -16,29 +16,17 @@
 ---
 
 <p align="center">
-  <picture>
-    <source
-      srcset="https://raw.githubusercontent.com/planetarium1001/planetarium1001/main/output/stats_commits.svg#gh-dark-mode-only"
-      media="(prefers-color-scheme: dark)"
-    >
-    <img
-      src="https://raw.githubusercontent.com/planetarium1001/planetarium1001/main/output/stats_commits.svg"
-      alt="Commit activity"
-      width="100%"
-    >
-  </picture>
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=planetarium1001&show_icons=false&hide_rank=true&hide_border=true&theme=transparent"
+    alt="GitHub stats"
+    width="100%"
+  >
   <br><br>
-  <picture>
-    <source
-      srcset="https://raw.githubusercontent.com/planetarium1001/planetarium1001/main/output/stats_langs.svg#gh-dark-mode-only"
-      media="(prefers-color-scheme: dark)"
-    >
-    <img
-      src="https://raw.githubusercontent.com/planetarium1001/planetarium1001/main/output/stats_langs.svg"
-      alt="Language breakdown"
-      width="70%"
-    >
-  </picture>
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=planetarium1001&layout=compact&hide_border=true&theme=transparent&langs_count=6"
+    alt="Top languages"
+    width="70%"
+  >
 </p>
 
 ---
