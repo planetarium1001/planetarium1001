@@ -1,0 +1,76 @@
+name: Update profile cards
+
+# Cadence: every six hours + on demand.
+#
+# Two things bound the granularity:
+#   1. Pushes in *other* repositories cannot trigger this workflow, so reactive
+#      "on every commit" updates need repository_dispatch and a PAT in every
+#      repo. Polling covers the same need at a fraction of the complexity.
+#   2. Every run that changes the output would otherwise add a commit to the
+#      default branch. Generated files are therefore published to the `cards`
+#      branch, which keeps this repository's history readable while letting the
+#      cards refresh as often as wanted.
+on:
+  schedule:
+    - cron: "17 */6 * * *"      # 00:17, 06:17, 12:17, 18:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/profile_cards.py"
+      - ".github/workflows/update-cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      CARDS_BRANCH: cards
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate cards into a temporary directory
+        env:
+          # Installation token: enough for public data. Swap in a PAT only if a
+          # search endpoint ever returns 403 for this repository.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: python3 scripts/profile_cards.py --out "$RUNNER_TEMP/cards"
+
+      - name: Publish to the cards branch
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin "$CARDS_BRANCH" >/dev/null 2>&1; then
+            git fetch --depth=1 origin "$CARDS_BRANCH"
+            git checkout -B "$CARDS_BRANCH" FETCH_HEAD
+          else
+            git checkout --orphan "$CARDS_BRANCH"
+          fi
+
+          # the branch holds generated output and nothing else
+          find . -mindepth 1 -maxdepth 1 -not -name .git -exec rm -rf {} +
+          cp "$RUNNER_TEMP"/cards/*.svg .
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "cards are already current; nothing to publish"
+            exit 0
+          fi
+
+          git commit -m "chore(cards): refresh profile cards [skip ci]"
+          git push origin "$CARDS_BRANCH"
