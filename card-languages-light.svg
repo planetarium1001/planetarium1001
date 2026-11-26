@@ -5,17 +5,17 @@
   <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="9.5" letter-spacing="1.9"
         fill="#57606a">LANGUAGES  ·  BY BYTES</text>
   <rect x="0.00" y="36.0" width="228.62" height="6.0" fill="#3d4b8c"/>
-  <rect x="230.62" y="36.0" width="133.86" height="6.0" fill="#55639f"/>
-  <rect x="366.48" y="36.0" width="26.68" height="6.0" fill="#6d7bb2"/>
-  <rect x="395.16" y="36.0" width="18.40" height="6.0" fill="#8593c5"/>
-  <rect x="415.56" y="36.0" width="16.56" height="6.0" fill="#9dabd8"/>
-  <rect x="434.12" y="36.0" width="35.88" height="6.0" fill="#b5c3eb"/>
+  <rect x="230.62" y="36.0" width="133.40" height="6.0" fill="#55639f"/>
+  <rect x="366.02" y="36.0" width="26.68" height="6.0" fill="#6d7bb2"/>
+  <rect x="394.70" y="36.0" width="18.40" height="6.0" fill="#8593c5"/>
+  <rect x="415.10" y="36.0" width="16.56" height="6.0" fill="#9dabd8"/>
+  <rect x="433.66" y="36.0" width="36.34" height="6.0" fill="#b5c3eb"/>
   <rect x="0" y="59" width="7" height="7" fill="#3d4b8c"/>
   <text x="13" y="66" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#57606a">Shell</text>
   <text x="140" y="66" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#1f2328">49.7%</text>
   <rect x="150" y="59" width="7" height="7" fill="#55639f"/>
   <text x="163" y="66" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#57606a">TypeScript</text>
-  <text x="290" y="66" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#1f2328">29.1%</text>
+  <text x="290" y="66" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#1f2328">29.0%</text>
   <rect x="300" y="59" width="7" height="7" fill="#6d7bb2"/>
   <text x="313" y="66" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#57606a">CSS</text>
   <text x="440" y="66" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#1f2328">5.8%</text>
@@ -27,5 +27,5 @@
   <text x="290" y="92" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#1f2328">3.6%</text>
   <rect x="300" y="85" width="7" height="7" fill="#b5c3eb"/>
   <text x="313" y="92" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#57606a">Other</text>
-  <text x="440" y="92" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#1f2328">7.8%</text>
+  <text x="440" y="92" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica Neue, Arial, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="10" fill="#1f2328">7.9%</text>
 </svg>
